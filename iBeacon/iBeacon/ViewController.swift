@@ -20,6 +20,30 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func showTrackViewController(sender: UIButton) {
+        
+        // Get the TrackViewController
+        var controller: TrackViewController
+        
+        // get controller
+        controller = self.storyboard?.instantiateViewControllerWithIdentifier("TrackViewController") as! TrackViewController
+        
+        // Present the view Controller
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @IBAction func showTransmitViewController(sender: UIButton) {
+        
+        // Get the TransmitViewController
+        var controller: TransmitViewController
+        
+        // get controller
+        controller = self.storyboard?.instantiateViewControllerWithIdentifier("TransmitViewController") as! TransmitViewController
+        
+        // Present the view Controller
+        self.navigationController?.pushViewController(controller, animated: true)
 
+    }
+    
 }
 
