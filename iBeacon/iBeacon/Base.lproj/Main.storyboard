@@ -274,6 +274,15 @@
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="accuracyLabel" destination="mWh-oc-Ab3" id="cPe-Zz-ahn"/>
+                        <outlet property="beaconFoundLabel" destination="rNs-ga-dfj" id="VIr-5U-iCe"/>
+                        <outlet property="distanceLabel" destination="cS2-CM-Png" id="Q2f-PU-0of"/>
+                        <outlet property="majorLabel" destination="U7y-Wq-PTC" id="bme-5d-PBo"/>
+                        <outlet property="minorLabel" destination="xsz-pn-YGZ" id="guG-ux-jcP"/>
+                        <outlet property="proximityUuidLabel" destination="6vl-Xz-iLB" id="IaO-mK-N2h"/>
+                        <outlet property="rssiLabel" destination="IQq-JR-TFW" id="ppr-r2-7Jv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbB-Uy-f0A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -371,7 +380,19 @@
                                 <variation key="widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="54" y="262" width="293" height="30"/>
                                 </variation>
+                                <connections>
+                                    <action selector="transmitBeacon:" destination="buz-c8-ebu" eventType="touchUpInside" id="2ni-IB-jdk"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRS-4b-eTJ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="110" y="300" width="181" height="21"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -385,6 +406,7 @@
                                 <exclude reference="PUl-nL-5Qa"/>
                                 <exclude reference="Sra-O9-MJH"/>
                                 <exclude reference="BQN-iL-BUV"/>
+                                <exclude reference="vRS-4b-eTJ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -398,9 +420,17 @@
                                 <include reference="PUl-nL-5Qa"/>
                                 <include reference="Sra-O9-MJH"/>
                                 <include reference="BQN-iL-BUV"/>
+                                <include reference="vRS-4b-eTJ"/>
                             </mask>
                         </variation>
                     </view>
+                    <connections>
+                        <outlet property="identityLabel" destination="Sra-O9-MJH" id="I7r-vQ-fSc"/>
+                        <outlet property="majorLabel" destination="BAX-RL-Png" id="V2w-Y1-aaq"/>
+                        <outlet property="minorLabel" destination="PUl-nL-5Qa" id="DY2-o5-JmS"/>
+                        <outlet property="transmitStatusLabel" destination="vRS-4b-eTJ" id="dUT-ZE-Qac"/>
+                        <outlet property="uuidLabel" destination="P4v-Pq-93d" id="7Vn-Fh-cGB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LNq-hJ-3sd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

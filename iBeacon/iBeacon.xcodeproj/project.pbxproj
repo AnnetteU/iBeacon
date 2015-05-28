@@ -15,6 +15,8 @@
 		CAE776361B15E5C3004C938F /* iBeaconTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE776351B15E5C3004C938F /* iBeaconTests.swift */; };
 		CAE776401B162D43004C938F /* TrackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE7763F1B162D43004C938F /* TrackViewController.swift */; };
 		CAE776421B162D59004C938F /* TransmitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE776411B162D59004C938F /* TransmitViewController.swift */; };
+		CAE776441B1661F9004C938F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE776431B1661F9004C938F /* CoreBluetooth.framework */; };
+		CAE776461B166201004C938F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAE776451B166201004C938F /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,8 @@
 		CAE776351B15E5C3004C938F /* iBeaconTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iBeaconTests.swift; sourceTree = "<group>"; };
 		CAE7763F1B162D43004C938F /* TrackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrackViewController.swift; sourceTree = "<group>"; };
 		CAE776411B162D59004C938F /* TransmitViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransmitViewController.swift; sourceTree = "<group>"; };
+		CAE776431B1661F9004C938F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		CAE776451B166201004C938F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAE776461B166201004C938F /* CoreLocation.framework in Frameworks */,
+				CAE776441B1661F9004C938F /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 		CAE776111B15E5C3004C938F = {
 			isa = PBXGroup;
 			children = (
+				CAE776451B166201004C938F /* CoreLocation.framework */,
+				CAE776431B1661F9004C938F /* CoreBluetooth.framework */,
 				CAE7761C1B15E5C3004C938F /* iBeacon */,
 				CAE776321B15E5C3004C938F /* iBeaconTests */,
 				CAE7761B1B15E5C3004C938F /* Products */,
